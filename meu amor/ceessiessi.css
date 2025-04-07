@@ -1,0 +1,96 @@
+/* Estilos básicos */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8e1f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    padding: 50px;
+}
+
+.titulo {
+    font-size: 40px;
+    color: #ff80bf;
+    font-weight: bold;
+}
+
+.subtitulo {
+    font-size: 22px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Estilo da galeria de selfies */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.item-selfie {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.item-selfie:hover {
+    transform: scale(1.05);
+}
+
+.foto {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilo do botão de próximo */
+.proximo {
+    margin-top: 50px;
+}
+
+.botao-proximo {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff80bf;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.botao-proximo:hover {
+    background-color: #ff66a1;
+    transform: scale(1.1);
+}
+
+.botao-proximo:active {
+    transform: scale(0.95);
+}
+
+/* Estilos dos corações */
+.coracoes {
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.coracao {
+    animation: coracaoAnimado 1s infinite alternate;
+    margin: 0 10px;
+}
+
+@keyframes coracaoAnimado {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
